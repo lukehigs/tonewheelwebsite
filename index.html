@@ -25,11 +25,14 @@
         .centered {
             max-width: 90%;
             height: auto;
+            pointer-events: none;      /* disable mouse events */
+            user-select: none;         /* prevent selection */
+            -webkit-user-drag: none;   /* prevent dragging */
         }
     </style>
 </head>
 
 <body>
-    <img class="centered" src="tonewheels.png" alt="tonewheel.net">
+    <img class="centered" src="tonewheels.png" alt="tonewheel.net" oncontextmenu="return false;" ondragstart="return false;">
 </body>
 </html>
